@@ -26,7 +26,7 @@ def get_info():
 def send_email(receiver,subject,message):
     server =smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login('sudharshanj474@gmail.com','Sudharshan@10')
+    server.login('Email','password')
     email=EmailMessage()
     email['from']='sudharshanj474@gmail.com'
     email['to']=receiver
@@ -38,9 +38,7 @@ def send_email(receiver,subject,message):
 
 
 email_list={
-    'red': 'Cvenkatesh.btech@gmail.com',
-    'pink':'chennakrishnasai@gmail.com',
-    'srinivas':'srinivasj474@gmail.com'
+#list of email ids 
 
 
 }
